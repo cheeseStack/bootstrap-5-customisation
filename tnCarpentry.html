@@ -1,0 +1,525 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Below: custom css file in css/main/min/css -->
+    <link rel="stylesheet" href="/css/main.min.css">
+
+    <!-- Below: Main Bootstrap Link -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+     crossorigin="anonymous"> -->
+     
+    <!-- Below: Bootstrap icons CDN link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>Net Ninja Pro - the Book </title>
+    <style>
+        section{
+            padding:60px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- navbar -->
+<nav class="navbar navbar-expand-md fixed-top navbar-light navbar-bg-light" style="background-color: #e3f2fd;">
+    <div class="container-xxl">
+        <!-- From left: 1: brand or logo that links to the intro -->
+        <a href="#intro" class="navbar-brand page-scroll">
+            <span class="fw-bold text-secondary">
+                <!-- below: bootstrap book icon -->
+                <i class="bi bi-book-half"></i>
+                Net Ninja Pro - The Book</span>
+        </a>
+        <!-- toggle button for mobile nav -->
+        <button class="navbar-toggler" type ="button" data-bs-toggle="collapse" 
+        data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+        aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <!-- Below: link item_1 -->
+                <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+                <!-- Below: link item21 -->
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+                <!-- Below: link item_3 -->
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Get in touch</a>
+                </li>
+                <!-- Below: link item_4 -->
+                <li class="nav-item d-md-none">
+                    <a href="#pricing" class="nav-link ">Pricing</a>
+                </li>
+                <!-- Below: link item_5 -->
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a href="#pricing" class="btn btn-secondary">Buy Now</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <!-- main image & intro text -->
+<section id="intro" class="text-keith">
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+            <!-- col_1 Start -->
+            <div class="col-md-5 text-center text-md-start">
+                <h1>
+                    <div class="display-2">Black-belt</div>
+                    <div class="display-5 text-muted">Your coding skills</div>
+                </h1>
+
+                <p class="lead my-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ratione accusantium, 
+                    architecto eius adipisci praesentium porro doloribus explicabo.</p>
+                <a href="#pricing" class="btn btn-secondary btn-lg-">Buy Now</a>
+
+                <!-- open sidebar / offcanvas to promote other products:https://getbootstrap.com/docs/5.1/components/offcanvas/  -->
+           <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+               Explore my other books
+           </a>
+           <!-- the offcanvas function is at the VERY BOTTOM of the HTML page -->
+            </div>
+            <!-- col_1 End  -->
+            <!-- col_2 Start -->
+            <div class="col-md-5 text-center">
+
+                <!-- Tooltips: https://getbootstrap.com/docs/5.1/components/tooltips/  -->
+                <!-- class of "tt" for use in JavaScript. See bottom of body for script function-->
+                <span class="tt" data-bs-placement="bottom" title="Net Ninja book cover"><img class="img-fluid d-none d-md-block" src="assets\ebook-cover.png" alt="ebook cover"></span>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- pricing plans -->
+    <section id="pricing" class="bg-light mt-5">
+        <div class="container-lg">
+            <!-- Pricing plans title -->
+            <div class="text-center">
+                <h2>Pricing Plans</h2>
+                <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+            </div>
+            <!-- Below: pricing options go in a grid after the row container-->
+            <div class="row my-5 align-items-center justify-content-center g-0">
+                   <!-- 1st card -->
+                <div class="col-8 col-lg-4 col xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Starter Edition</h4>
+                            <p class="lead card-subtitle">eBook download only</p>
+                            <p class="display-5 my-4 text-primary fw-bold">£12.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                   <!-- 2nd card -->
+                <div class="col-9 col-lg-4 col">
+                    <div class="card border-primary border-2">
+                        <div class="card-header text-center text-primary">Most Popular
+                            <div class="card-body text-center py-5">
+                                <h4 class="card-title">Complate Edition</h4>
+                                <p class="lead card-subtitle">eBook download & All Updates</p>
+                                <p class="display-4 my-4 text-primary fw-bold">£18.99</p>
+                                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                  <!-- 3rd card (same as 1st) -->
+                <div class="col-8 col-lg-4 col xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Ultimate Edition</h4>
+                            <p class="lead card-subtitle">eBook, downloads & extras</p>
+                            <p class="display-5 my-4 text-primary fw-bold">£22.99</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- topics at a glance -->
+    <section id="topics">
+        <div class="container-md">
+            <!-- Heading -->
+            <div class="text-center">
+                <h2>Inside the book . . .</h2>
+                <p class="text-muted lead">A quick glance at what you'll learn:</p>
+            </div>
+            <!-- Beolow: grid container -->
+            <div class="row my-y g-5 justify-content-around align-items-center">
+                <div class="col-6 col-lg-4">
+                    <img src="assets\kindle.png" alt="eBook" class="img-fluid">
+                </div>
+                 <!-- for small screens, have full width -->
+            <div class="col-lg-7">
+                <!-- accordion section-->
+                <div class="accordion" id="chapters">
+                    <!-- 1st accordion Start-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#chapter-1" 
+                            aria-expanded="true" aria-controls="chapter-1" >Chapter 1 -Your First Web Page</button>
+                        </h2>
+                        <!-- content of 1st accordion -->
+                        <div id="chapter-1"class="accordion-collapse collapse show" 
+                        aria-labelledby="heading-1" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi!</p>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- 1st accordion End-->
+                    <!-- 2nd accordion Start-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                            <button class="accordion-button" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#chapter-2" 
+                            aria-expanded="true" aria-controls="chapter-2" >Chapter 2 -Your Second Web Page</button>
+                        </h2>
+                        <!-- content of 2nd accordion -->
+                        <div id="chapter-2"class="accordion-collapse collapse" 
+                        aria-labelledby="heading-2" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi!</p>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- 2nd accordion End-->
+                    <!-- 3rd accordion Start-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-3">
+                            <button class="accordion-button" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#chapter-3" 
+                            aria-expanded="true" aria-controls="chapter-3" >Chapter 3 -Your Third Web Page</button>
+                        </h2>
+                        <!-- content of 3rd accordion -->
+                        <div id="chapter-3"class="accordion-collapse collapse" 
+                        aria-labelledby="heading-3" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi!</p>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- 3rd accordion End-->
+                    <!-- 4th accordion Start-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-4">
+                            <button class="accordion-button" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#chapter-4" 
+                            aria-expanded="true" aria-controls="chapter-4" >Chapter 3 -Your Third Web Page</button>
+                        </h2>
+                        <!-- content of 3rd accordion -->
+                        <div id="chapter-4"class="accordion-collapse collapse" 
+                        aria-labelledby="heading-4" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <!-- 4th card (same as 1st) -->
+                    <div class="col-8 col-lg-4 col xl-3">
+                        <div class="card border-0">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Ultimate Edition</h4>
+                                <p class="lead card-subtitle">eBook, downloads & extras</p>
+                                <p class="display-5 my-4 text-primary fw-bold">£22.99</p>
+                                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- 4th accordion End-->
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- reviews list -->
+    <!-- uses List Groupt: https://getbootstrap.com/docs/5.1/components/list-group/ -->
+    <!-- Bootstrap Icons:  -->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <!-- Below: Title and text about section -->
+            <div class="text-center">
+                <h2><i class="bi bi-stars text-altdark"></i>Book Reviews</h2>
+                <p class="lead">What my students have said about the book...</p>
+            </div>
+            <!-- List of reviews in a grid to minimise the width of the group for 1 column-->
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <!-- list items -->
+                        <!-- 1st list item -->
+                        <div class="list-group-item py-3">
+                            <!-- Below: adding Bootstrap star icons to reviews -->
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <!-- Star rating end -->
+                            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Dignissimos minima omnis enim eius excepturi suscipit ut, 
+                                facilis itaque deserunt animi.</p>
+                            <small>Review by Mario</small>
+                        </div>
+                        <!-- 2nd list item -->
+                        <div class="list-group-item py-3">
+                            <!-- Below: adding Bootstrap star icons to reviews --> 
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <!-- Star rating end -->
+                            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Dignissimos minima omnis enim eius excepturi suscipit ut, 
+                                facilis itaque deserunt animi.</p>
+                            <small>Review by Mario</small>
+                        </div>
+                        <!-- 3rd list item -->
+                        <div class="list-group-item py-3">
+                            <!-- Below: adding Bootstrap star icons to reviews --> 
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <!-- Star rating end -->
+                            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Dignissimos minima omnis enim eius excepturi suscipit ut, 
+                                facilis itaque deserunt animi.</p>
+                            <small>Review by Mario</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- contact form -->
+    <!-- Forms page: https://getbootstrap.com/docs/5.1/forms/overview/ -->
+    <!-- form-control; form-lebel; form-select; input-group; input-group-text -->
+    <section id="contact">
+        <div class="container-lg">
+            <!-- Below: title and subtitle -->
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">Questions to ask? Fill out the form to contact me directly. . .</p>
+            </div>
+            <!-- Form in a row to control response size -->
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <!-- form below: frontend only -->
+                    <form>
+                        <!-- Email -->
+                        <label for="email" class="form-label">Email address:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com">
+                            <!-- Tooltip for inputs start -->
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
+                                  <i class="bi bi-question-circle text-muted"></i>  
+                                </span>
+                            </span>
+                            <!-- Tooltip for inputs End -->
+                        </div>
+                        
+                        <!-- Name -->
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                           <input type="text" class="form-control" id="name" placeholder="e.g. Mario"> 
+                           <!-- Tooltip for inputs start -->
+                           <span class="input-group-text">
+                            <span class="tt" data-bs-placement="bottom" title="Enter your full name">
+                              <i class="bi bi-question-circle text-muted"></i>  
+                            </span>
+                        </span>
+                        <!-- Tooltip for inputs End -->
+                        </div>
+                        
+
+                        <!-- Select field  for query-->
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select class="form-select"  id="subject">
+                            <option value="pricing" selected>Pricing query</option>
+                            <option value="content" >Content query</option>
+                            <option value="other" >Other query</option>
+                        </select>
+                        </div>
+                        <!-- Below: insert a floating label for the query box: -->
+                        <div class="form-floating my-4">
+                            <textarea id="query" cols="30" rows="10" class="form-control" style="height:140px"></textarea>
+                            <label for="query">Your query...</label>
+                        </div>
+                        <!-- submit button -->
+                        <div class="mb-4 text-center">
+                            <button class="btn btn-secondary" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- get updates / modal trigger -->
+
+    <section class="bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in the loop</h2>
+                <p class="lead">Get the latest updates as they happen...</p>
+            </div>
+            <!-- adding a button for the moadal popup-->
+            <div class="row justify-content-center">
+                <div class="col md-8 text-center">
+                    <p class="text-muted my-4">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. 
+                        Tempore pariatur eius labore quidem quod quasi 
+                        corrupti repellendus ullam id delectus!
+                    </p>
+                    <!-- Below: button for the modal popup -->
+                    <button class="btn btn-primary" data-bs-toggle="modal" 
+                    data-bs-target="#reg-modal">
+                    Register for Updates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal / popup build -->
+    <div class="modal fasde" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <!-- Content of the modal goes here -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--Below: Modal header -->
+                <div class="modal-header">
+                    <h5 class="mpdal-title" id="modal-title">Get the latest Updates</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <!-- Below: Modal body -->
+                <div class="modal-body">Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Ex, laboriosam.
+                    <label for="modal-email" class="form-label">Your email address:</label>
+                    <input type="email" class="form-control" id="modal-email" placehoolder="e.g. mario@example.com">
+                </div>
+                <!-- Below: Modal footer -->
+                <div class="modal-footer">
+                    <button class="btn btn-primary submit">Submit</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+
+
+<!-- the offcanvas function content Start -->
+<!-- offcanvas start comes on the left -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <!-- Title -->
+
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My other books</h5>
+        <!-- Below: close button -->
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="close">
+
+        </button>
+        </div>
+        <!-- Below: Body -->
+        <div class="offcanvas-body">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Eius quibusdam qui dolores dolorem accusantium.</p>
+
+                <!-- Dropdown option -->
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+                        Choose a book title
+                    </button>
+                    <!-- List of items -->
+                    <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                        <li><a href="#" class="dropdown-item">Become a React Superhero</a></li>
+                        <li><a href="#" class="dropdown-item">Become a JS Superhero</a></li>
+                        <li><a href="#" class="dropdown-item">Become a Vue Ninja</a></li>
+                    </ul>
+                </div>
+        </div> 
+    </div>
+    <!-- the offcanvas function content End -->
+
+
+
+
+<!-- JavaScript CDN and function for Tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt');
+        tooltips.forEach(t => {
+            new.bootstrap.Tooltip(t);
+        });
+    </script>
+
+</body>
+</html>
